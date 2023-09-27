@@ -50,3 +50,15 @@ processResources {
         exclude 'mcmod.info'
     }
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            version = "1.0"
+            group= "club.someoneice.togocup.recipebook"
+            artifactId = "PineappleRecipeBook"
+
+            from components.java
+        }
+    }
+}
